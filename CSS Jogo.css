@@ -1,0 +1,199 @@
+body{
+    background-image: url("PREDIO.jpg");
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #000000;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#check{
+    display: none;
+}
+
+#icone{
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
+
+.barra{
+    background-color: #333;
+    height: 100%;
+    width: 187px;
+    position: absolute;
+    transition: all .2s linear;
+    left: -300px;
+}
+
+nav{
+    transition: all;
+    position: absolute;
+    top: 60px;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+.link{
+    background-color: #494950;
+    padding: 20px;
+    font-family: "Arial Black";
+    font-size: 15pt;
+    transition: all .2s linear;
+    color: white;
+    border-bottom: 2px solid #222;
+    opacity: 0;
+    margin-top: 200px;
+}
+
+.link:hover{
+    background-color: aqua;
+}
+
+#check:checked ~ .barra{
+    transform: translateX(300px);
+}
+
+#check:checked ~ .barra nav a .link{
+    opacity: 1;
+    margin-top: 0;
+    transition-delay: .1s;
+}
+
+#titulo{
+    text-align: center;
+    position: center;
+}
+
+#titulo2 {
+    position: absolute;
+    left: 36%;
+}
+
+
+#LCD{
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    text-decoration: none;
+    font-size: 40px;
+    position: absolute;
+    left: 33%;
+    top: 29%;
+    color: red;
+}
+
+
+#regras1{
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    text-decoration: none;
+    font-size: 40px;
+    position: absolute;
+    left: 41%;
+    top: 23%;
+    color: red;
+}
+
+#regras2{
+    font-family: Bahnschrift;
+    text-align: left;
+    text-decoration: none;
+    font-size: 20px;
+    position: absolute;
+    right: 8%;
+    left: 8%;
+    top: 45%;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+#regras3{
+    font-family: "Arial Rounded MT Bold", Arial, serif;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    position: absolute;
+    left: 8%;
+    top: 40%;
+    color: red;
+}
+
+#regras4{
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    text-decoration: none;
+    font-size: 40px;
+    position: absolute;
+    left: 43%;
+    top: 29%;
+    color: red;
+}
+#regras5{
+    font-family: Bahnschrift;
+    text-align: left;
+    text-decoration: none;
+    font-size: 20px;
+    position: absolute;
+    left: 8%;
+    top: 40%;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+
+#filtro1{
+     position: absolute;
+     left: 32%;
+ }
+
+#video1{
+    position: absolute;
+    left: 30%;
+    top: 67%;
+}
+
+#video2{
+    position: absolute;
+    left: 30%;
+    top: 100%;
+}
+
+#formula{
+    font-family: "Arial Rounded MT Bold", Arial, serif;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    position: absolute;
+    left: 8%;
+    color: red;
+}
+
+#gab{
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    text-decoration: none;
+    font-size: 40px;
+    position: absolute;
+    left: 35%;
+    top: 29%;
+    color: red;
+}
+#resp{
+    font-family: Bahnschrift;
+    text-align: left;
+    text-decoration: none;
+    font-size: 40px;
+    position: absolute;
+    left: 8%;
+    top: 42%;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
