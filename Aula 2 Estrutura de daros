@@ -1,0 +1,42 @@
+#include <iostream>
+
+
+class LES : public ILista{
+    int M;
+    int n;
+    int *v;
+
+publuc:
+    LES(int M){
+        this->M = M;
+        this->n = 0;
+        this->v = new int[M];
+    };
+    ~LES(){
+        delete[] this->v;
+    }
+
+    bool Insere(int x){
+        //Busca lugar
+        int i;
+        for (int i = 0; i < n && v[i] < x, i++);
+        //Problema 1 resolvido
+
+
+        //Desloca
+        for (int j = n; j > i ; ---j) {
+            v[j] = v[j-1];
+        }
+        v[i] = x;
+        // Incrementa nossa flag
+        n++;
+
+    }
+};
+
+int main(){
+
+    LES *1 = new LES(20);
+
+    return 0;
+}
