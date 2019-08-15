@@ -51,14 +51,12 @@ publuc:
 int main(){
 
     LES *1 = new LES(7);
-    l->Insere(5);
-    l->Insere(10);
-    l->Insere(15);
-    l->Insere(20);
-    l->Insere(12);
-    l->Insere(1);
-    l->Insere(30);
+    
+    int i=0;
+    while(1->Insere(i++));
     l->Imprime();
-
+    
+    
+    delete 1;
     return 0;
 }
