@@ -16,7 +16,21 @@ publuc:
         delete[] this->v;
     }
 
+
+    void Imprime(){
+        for (int i = 0; i < n; ++i) {
+            std::cout << v[i] << " ";
+
+        }
+        std::cout << v[i] << "\n";
+    }
+
+
     bool Insere(int x){
+        if(n == M){
+            return false;
+        }
+
         //Busca lugar
         int i;
         for (int i = 0; i < n && v[i] < x, i++);
@@ -36,7 +50,15 @@ publuc:
 
 int main(){
 
-    LES *1 = new LES(20);
+    LES *1 = new LES(7);
+    l->Insere(5);
+    l->Insere(10);
+    l->Insere(15);
+    l->Insere(20);
+    l->Insere(12);
+    l->Insere(1);
+    l->Insere(30);
+    l->Imprime();
 
     return 0;
 }
